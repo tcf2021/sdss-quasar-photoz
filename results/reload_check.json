@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "freeze_id": "45addd188f9af37575eb4422df860e12b9f3c5fd34ccb03dc28afbe44258f218",
+  "models": {
+    "final_median": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "final_mean": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "final_knn_mag": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "final_knn_colors": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "final_knn_colors_i": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "final_knn_colors_i_err": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "final_rf_mag": {
+      "max_absolute_difference": 2.6645352591003757e-15,
+      "passed": true
+    },
+    "final_rf_colors": {
+      "max_absolute_difference": 2.220446049250313e-15,
+      "passed": true
+    },
+    "final_rf_colors_i": {
+      "max_absolute_difference": 2.6645352591003757e-15,
+      "passed": true
+    },
+    "final_rf_colors_i_err": {
+      "max_absolute_difference": 3.1086244689504383e-15,
+      "passed": true
+    },
+    "final_xgb_mag": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "final_xgb_colors": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "final_xgb_colors_i": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "final_xgb_colors_i_err": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "final_mlp_mag": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "final_mlp_colors": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "final_mlp_colors_i": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "final_mlp_colors_i_err": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "shift_knn_bright": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "shift_knn_mixed": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "shift_rf_bright": {
+      "max_absolute_difference": 1.7763568394002505e-15,
+      "passed": true
+    },
+    "shift_rf_mixed": {
+      "max_absolute_difference": 1.7763568394002505e-15,
+      "passed": true
+    },
+    "shift_xgb_bright": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "shift_xgb_mixed": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "shift_mlp_bright": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    },
+    "shift_mlp_mixed": {
+      "max_absolute_difference": 0.0,
+      "passed": true
+    }
+  }
+}

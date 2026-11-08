@@ -1,0 +1,31 @@
+{
+  "freeze_id": "45addd188f9af37575eb4422df860e12b9f3c5fd34ccb03dc28afbe44258f218",
+  "purpose": "FORMAL_EXPERIMENT",
+  "prediction_device": "cpu",
+  "environment": {
+    "python": "3.11.18",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.6.1",
+      "astropy": "7.0.2",
+      "xgboost": "3.0.2",
+      "matplotlib": "3.10.3",
+      "torch": "2.9.1+cu130",
+      "joblib": "1.5.1"
+    }
+  },
+  "missing_i_mag": 0,
+  "audit": {
+    "outlier_cases": 20,
+    "controls": 20,
+    "neighbor_features": "four colors, development-only imputation and scaling",
+    "interpretation": "Large neighbor redshift dispersion suggests ambiguity to investigate; it does not prove its physical cause"
+  },
+  "files": {
+    "predictions.npz": "f2b5722aff0a31f5cfb14f390e137a323f0180ca3e01dc1496f08d10856536f1",
+    "metrics_test.json": "f514f5e1e0061377ce326da50560f37ea333527847e0488ed7ad032d16f2504c",
+    "shift_predictions.npz": "05f942cd3895a15fe03e9ce11603df392f96353ba9cf249088b5a3eb5967b60c"
+  }
+}

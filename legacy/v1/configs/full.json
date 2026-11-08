@@ -1,0 +1,59 @@
+{
+  "seed": 42,
+  "features": [
+    "mag",
+    "rich"
+  ],
+  "train_limit": null,
+  "val_limit": null,
+  "allow_test": true,
+  "xgb": [
+    {
+      "n_estimators": 1500,
+      "max_depth": 6,
+      "learning_rate": 0.04,
+      "subsample": 0.9,
+      "colsample_bytree": 1.0,
+      "min_child_weight": 10,
+      "reg_lambda": 5.0,
+      "early_stopping_rounds": 60
+    },
+    {
+      "n_estimators": 1500,
+      "max_depth": 8,
+      "learning_rate": 0.04,
+      "subsample": 0.9,
+      "colsample_bytree": 1.0,
+      "min_child_weight": 20,
+      "reg_lambda": 5.0,
+      "early_stopping_rounds": 60
+    }
+  ],
+  "mlp": [
+    {
+      "hidden": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "batch_size": 1024,
+      "epochs": 120,
+      "patience": 15
+    },
+    {
+      "hidden": [
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "lr": 0.0005,
+      "weight_decay": 0.0001,
+      "batch_size": 1024,
+      "epochs": 120,
+      "patience": 15
+    }
+  ]
+}

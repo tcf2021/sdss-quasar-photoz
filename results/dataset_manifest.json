@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "purpose": "FORMAL_EXPERIMENT",
+  "prepare_contract": {
+    "v1_dataset_id": "815568f5491ae4470fc1d26dab466916d140195b287bc9632c3f04ed05ce6962",
+    "raw_sha256": "8dfc18a580dc137ca9a729ea7febc491aff61eea4953b91fc480ef7e85b70f6e",
+    "test_size": 30000,
+    "seed": 20261107,
+    "technical": false
+  },
+  "source": "https://data.sdss.org/sas/dr16/eboss/qso/DR16Q/DR16Q_v4.fits",
+  "v1_manifest_sha256": "8e16e587ea67f738ad27c88fb767939870f237719b2db95c352f2e81f55b50a5",
+  "v1_all_objects_excluded_from_new_test": 200000,
+  "unused_eligible_unique_pool": 548696,
+  "counts": {
+    "dev": 170000,
+    "test": 30000
+  },
+  "files": {
+    "dev": "f68fdb3ec03445868fe876429371696151ba8a5fff57e14a3c33bb047bdc4a4f",
+    "test": "80c265cabae2b153c3842c3061d359a62f1181832fdf5d9fdf30ddd8a8253e15"
+  },
+  "feature_names": {
+    "mag": [
+      "mag0_u",
+      "mag0_g",
+      "mag0_r",
+      "mag0_i",
+      "mag0_z"
+    ],
+    "colors": [
+      "u-g",
+      "g-r",
+      "r-i",
+      "i-z"
+    ],
+    "colors_i": [
+      "u-g",
+      "g-r",
+      "r-i",
+      "i-z",
+      "mag0_i"
+    ],
+    "colors_i_err": [
+      "u-g",
+      "g-r",
+      "r-i",
+      "i-z",
+      "mag0_i",
+      "magerr_u",
+      "magerr_g",
+      "magerr_r",
+      "magerr_i",
+      "magerr_z"
+    ]
+  },
+  "rules": {
+    "development": "Original V1 training + validation only; V1 test remains excluded",
+    "new_test": "Seeded sample outside every V1 identity component; frozen before V2 training",
+    "identity": "Connected nonblank SDSS_NAME / positive THING_ID over the entire catalog",
+    "labels": "Z only, 0<Z<=7 and IS_QSO_FINAL==1",
+    "inputs": "PSFMAG-EXTINCTION and PSFMAGERR; at least three valid corrected bands",
+    "quality_metadata": "SOURCE_Z and ZWARNING retained for audit, never used as features",
+    "generalization": "Same-catalog holdout, not cross-survey validation"
+  },
+  "dataset_id": "7de8f8e54b61cbf0c85b3ce2d2d57264ebd26821e14cd7817c4af0d6eceeda38"
+}

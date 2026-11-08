@@ -1,0 +1,39 @@
+# Environments, caches and editor files
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Scientific data and generated runs, at any depth
+data/
+runs/
+logs/
+*.fits
+*.fits.gz
+*.npz
+*.npy
+*.pt
+*.pth
+*.ckpt
+*.joblib
+*.pkl
+*.pickle
+*.ubj
+*.h5
+*.hdf5
+*.zip
+*.rar
+*.7z
+predictions_new.csv
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json

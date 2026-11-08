@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "purpose": "FORMAL_EXPERIMENT",
+  "source": "https://data.sdss.org/sas/dr16/eboss/qso/DR16Q/DR16Q_v4.fits",
+  "raw_name": "DR16Q_v4.fits",
+  "raw_bytes": 1718484480,
+  "raw_sha256": "8dfc18a580dc137ca9a729ea7febc491aff61eea4953b91fc480ef7e85b70f6e",
+  "seed": 42,
+  "requested_max_samples": 200000,
+  "n_catalog": 750414,
+  "n_after_joint_filter": 748696,
+  "n_after_dedup": 748696,
+  "n_selected": 200000,
+  "split_counts": {
+    "train": 140000,
+    "val": 30000,
+    "test": 30000
+  },
+  "files": {
+    "train": "c945800bb91a388d5af5e29c7303a4c2f4dfa4151d06c3db023c0edffcde1530",
+    "val": "17a08d4a2b9f1c2092ca317f33ad881a2cb0e6189b4701ec44a8eb3e44403d9f",
+    "test": "1a111145dfd7cf62590828533bcc8acd8886c3c137f8d9199b4eb0ff7f560a6d"
+  },
+  "feature_names": {
+    "mag": [
+      "mag0_u",
+      "mag0_g",
+      "mag0_r",
+      "mag0_i",
+      "mag0_z"
+    ],
+    "rich": [
+      "mag0_u",
+      "mag0_g",
+      "mag0_r",
+      "mag0_i",
+      "mag0_z",
+      "u-g",
+      "g-r",
+      "r-i",
+      "i-z",
+      "magerr_u",
+      "magerr_g",
+      "magerr_r",
+      "magerr_i",
+      "magerr_z"
+    ]
+  },
+  "individual_rejection_counts_over_catalog": {
+    "not_IS_QSO_FINAL_1": 665,
+    "invalid_or_outside_0_z_7": 48,
+    "blank_name": 0,
+    "fewer_than_3_valid_mags": 1011
+  },
+  "missing_features_selected": {
+    "mag": {
+      "mag0_u": 1,
+      "mag0_g": 2,
+      "mag0_r": 0,
+      "mag0_i": 0,
+      "mag0_z": 0
+    },
+    "rich": {
+      "mag0_u": 1,
+      "mag0_g": 2,
+      "mag0_r": 0,
+      "mag0_i": 0,
+      "mag0_z": 0,
+      "u-g": 2,
+      "g-r": 2,
+      "r-i": 0,
+      "i-z": 0,
+      "magerr_u": 13,
+      "magerr_g": 10,
+      "magerr_r": 8,
+      "magerr_i": 10,
+      "magerr_z": 14
+    }
+  },
+  "rules": {
+    "label": "Z; 0 < Z <= 7; IS_QSO_FINAL == 1",
+    "magnitudes": "PSFMAG - EXTINCTION; before subtraction require 0<mag<40 and 0<=extinction<10",
+    "errors": "PSFMAGERR is magnitude error, not inverse variance; require 0<err<10; otherwise NaN",
+    "missing": "Retain rows with >=3 finite corrected bands; impute only during training",
+    "duplicates": "Connected components by nonblank SDSS_NAME or positive THING_ID; keep first eligible row",
+    "split": "Seeded random 70/15/15; fixed before pilot training; no spatial/external holdout",
+    "pipeline_warning": "No universal ZWARNING cut: primary Z can be visually corrected"
+  },
+  "dataset_id": "815568f5491ae4470fc1d26dab466916d140195b287bc9632c3f04ed05ce6962"
+}

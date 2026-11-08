@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "seed": 42,
+  "folds": 3,
+  "early_stop_fraction": 0.15,
+  "cv_max_samples": 300,
+  "features": [
+    "mag",
+    "colors",
+    "colors_i",
+    "colors_i_err"
+  ],
+  "models": {
+    "knn": [
+      {
+        "n_neighbors": 3,
+        "weights": "distance",
+        "algorithm": "auto",
+        "leaf_size": 40
+      }
+    ],
+    "rf": [
+      {
+        "n_estimators": 5,
+        "max_depth": 5,
+        "min_samples_leaf": 3,
+        "max_features": 1.0,
+        "bootstrap": true
+      }
+    ],
+    "xgb": [
+      {
+        "max_rounds": 8,
+        "patience": 3,
+        "max_depth": 3,
+        "learning_rate": 0.04,
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "min_child_weight": 10,
+        "reg_lambda": 5.0
+      }
+    ],
+    "mlp": [
+      {
+        "hidden": [
+          16,
+          8
+        ],
+        "dropout": 0.1,
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "batch_size": 64,
+        "max_epochs": 3,
+        "patience": 2
+      }
+    ]
+  },
+  "allow_final_test": false,
+  "shift": {
+    "feature": "colors_i_err",
+    "i_threshold": 20.0,
+    "max_train_samples": 100
+  },
+  "audit_cases": 4
+}

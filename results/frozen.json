@@ -1,0 +1,18 @@
+{
+  "run_id": "1eecfab76adf88e88028798725ec9de18fa7f29d660b50e21a3500175eae07fc",
+  "dataset_id": "7de8f8e54b61cbf0c85b3ce2d2d57264ebd26821e14cd7817c4af0d6eceeda38",
+  "selection_id": "c86f525d78d59752ea57abf4557aebb48100f7aa0f3bfa897745081b731a4667",
+  "purpose": "FORMAL_EXPERIMENT",
+  "files": {
+    "cv_selection.json": "59f4a91969e66bd4dd3937a75569dcffc93dae288772449963952043b22b6dfb",
+    "cv_summary.csv": "1e3c6ac59072140d3d1a68894f660bd2971ec34c8fc1a24e85b730ef29dc39f9",
+    "cv_folds.csv": "174a1baed00b1553112a7bd34630b23a26130597c0a9c6140693ef5ee0d60284",
+    "cv_indices.npz": "0d3d44d89c2fe163d75787312b7068a9236400a90204a18dbb9e1565e5d9b413",
+    "final_models.json": "abb217cab400ca4e9d072b54054cbb4a59e3de934b1c00caff93defa1c4dbd4a",
+    "final_indices.npz": "74ad6d46681e50133915680aaf82293604b6f997b082bb72900ca353b8b63cf9",
+    "shift_models.json": "776ea1377d160041e31590fe6d6ea18c1e758762a6db27d69c40707a9930e96c",
+    "shift_indices.npz": "66f178eb8d3e507233a4085178a5c53928445fa532f837fc06981ebb51ba84b9"
+  },
+  "overall_best_group": "mlp_colors_i_err",
+  "freeze_id": "45addd188f9af37575eb4422df860e12b9f3c5fd34ccb03dc28afbe44258f218"
+}

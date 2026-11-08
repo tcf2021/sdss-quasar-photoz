@@ -1,0 +1,36 @@
+{
+  "seed": 42,
+  "features": [
+    "mag",
+    "rich"
+  ],
+  "train_limit": 2000,
+  "val_limit": 500,
+  "allow_test": false,
+  "xgb": [
+    {
+      "n_estimators": 30,
+      "max_depth": 6,
+      "learning_rate": 0.04,
+      "subsample": 0.9,
+      "colsample_bytree": 1.0,
+      "min_child_weight": 10,
+      "reg_lambda": 5.0,
+      "early_stopping_rounds": 8
+    }
+  ],
+  "mlp": [
+    {
+      "hidden": [
+        32,
+        16
+      ],
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "batch_size": 1024,
+      "epochs": 3,
+      "patience": 2
+    }
+  ]
+}

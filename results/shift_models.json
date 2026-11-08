@@ -1,0 +1,69 @@
+{
+  "selection_id": "c86f525d78d59752ea57abf4557aebb48100f7aa0f3bfa897745081b731a4667",
+  "models": {
+    "knn_bright": {
+      "directory": "trials\\shift_knn_bright",
+      "complete_sha256": "2d65814fb1552d740f24d5c318254674c9939b4a3af65f0a8edc9d0d66861aa3",
+      "family": "knn",
+      "arm": "bright",
+      "feature": "colors_i_err"
+    },
+    "knn_mixed": {
+      "directory": "trials\\shift_knn_mixed",
+      "complete_sha256": "60c6c42bf82bfa2912e8cb4927ff8ebe7d802b5bab1156e574248309e6b29707",
+      "family": "knn",
+      "arm": "mixed",
+      "feature": "colors_i_err"
+    },
+    "rf_bright": {
+      "directory": "trials\\shift_rf_bright",
+      "complete_sha256": "90af218c07cc103d652713a3154f72553f0a6be2205f2f2a7fc8da147fc01c0f",
+      "family": "rf",
+      "arm": "bright",
+      "feature": "colors_i_err"
+    },
+    "rf_mixed": {
+      "directory": "trials\\shift_rf_mixed",
+      "complete_sha256": "d8e11655a31d28f92f939056c4702b9b7925aabef04d057731f7bce29e734421",
+      "family": "rf",
+      "arm": "mixed",
+      "feature": "colors_i_err"
+    },
+    "xgb_bright": {
+      "directory": "trials\\shift_xgb_bright",
+      "complete_sha256": "9ff168201131abf94db5e7c3414e36fc54b1fb5236f437aa6ae67c6bd0c35a09",
+      "family": "xgb",
+      "arm": "bright",
+      "feature": "colors_i_err"
+    },
+    "xgb_mixed": {
+      "directory": "trials\\shift_xgb_mixed",
+      "complete_sha256": "d00d3b0193296e6414eb4bed722e98563d0fea5287df9fade6531ca74a971579",
+      "family": "xgb",
+      "arm": "mixed",
+      "feature": "colors_i_err"
+    },
+    "mlp_bright": {
+      "directory": "trials\\shift_mlp_bright",
+      "complete_sha256": "30429b145fff04f3ecee707220ee1177972e89125e0f396607292683b6a18683",
+      "family": "mlp",
+      "arm": "bright",
+      "feature": "colors_i_err"
+    },
+    "mlp_mixed": {
+      "directory": "trials\\shift_mlp_mixed",
+      "complete_sha256": "92297ca7a610c12770487ea2a55e3844b7df95657f925229c431e769c31c8ff0",
+      "family": "mlp",
+      "arm": "mixed",
+      "feature": "colors_i_err"
+    }
+  },
+  "indices_sha256": "66f178eb8d3e507233a4085178a5c53928445fa532f837fc06981ebb51ba84b9",
+  "i_threshold": 20.0,
+  "feature": "colors_i_err",
+  "train_n_per_arm": 50000,
+  "mixed_train_faint_count": 33850,
+  "evaluation": "Both arms evaluated on exactly the same finite-i faint subset of the NEW holdout",
+  "interpretation": "Controlled brightness-selection shift; labels and other covariates may also shift. Not cross-survey validation.",
+  "shift_id": "9d86d04f6ac222244e15879ee9132fd49b9dc25a5aa5c1ec394244ac0ec82e74"
+}

@@ -1,0 +1,150 @@
+{
+  "selection_id": "c86f525d78d59752ea57abf4557aebb48100f7aa0f3bfa897745081b731a4667",
+  "models": {
+    "median": {
+      "directory": "trials\\final_median",
+      "complete_sha256": "e2a276df6c7720ddf117c7155b330b5c595102bb2ec435d078b03144607a1fd0",
+      "family": "median",
+      "feature": "none",
+      "candidate": 1,
+      "budget": null
+    },
+    "mean": {
+      "directory": "trials\\final_mean",
+      "complete_sha256": "90c01f827b2abf5b69a607e0b82fc60508c53f1451b3a8b8a0f31dd9946eb5fb",
+      "family": "mean",
+      "feature": "none",
+      "candidate": 1,
+      "budget": null
+    },
+    "knn_mag": {
+      "directory": "trials\\final_knn_mag",
+      "complete_sha256": "6e80991226b9ab036317bda1698952278a2936c759293ee7ad0c9054f29d3268",
+      "family": "knn",
+      "feature": "mag",
+      "candidate": 5,
+      "budget": null
+    },
+    "knn_colors": {
+      "directory": "trials\\final_knn_colors",
+      "complete_sha256": "5527de84ec03551bb241a6cf208eac52b08f007ed560a09ba84d7dec5bae531a",
+      "family": "knn",
+      "feature": "colors",
+      "candidate": 7,
+      "budget": null
+    },
+    "knn_colors_i": {
+      "directory": "trials\\final_knn_colors_i",
+      "complete_sha256": "e5f1cec99270216ee25e69949364476287110f0a0d81baa473b71567f749db09",
+      "family": "knn",
+      "feature": "colors_i",
+      "candidate": 7,
+      "budget": null
+    },
+    "knn_colors_i_err": {
+      "directory": "trials\\final_knn_colors_i_err",
+      "complete_sha256": "36e0f1b9d9f7634a8adac95d29c75099a5afb363259f35b41634a5d4682b0956",
+      "family": "knn",
+      "feature": "colors_i_err",
+      "candidate": 5,
+      "budget": null
+    },
+    "rf_mag": {
+      "directory": "trials\\final_rf_mag",
+      "complete_sha256": "e74885560ab0fc74ea65bc5dc06184bbdc324d268521e543f9145da943be8265",
+      "family": "rf",
+      "feature": "mag",
+      "candidate": 1,
+      "budget": null
+    },
+    "rf_colors": {
+      "directory": "trials\\final_rf_colors",
+      "complete_sha256": "33e48ff231c86d425b6a771b45e7d9c97314b9e6bde471cb899888ec7dc72d3c",
+      "family": "rf",
+      "feature": "colors",
+      "candidate": 2,
+      "budget": null
+    },
+    "rf_colors_i": {
+      "directory": "trials\\final_rf_colors_i",
+      "complete_sha256": "463cc4fce4352058d1187f26271861df691ee6649afc9af7377a5f44210bdc86",
+      "family": "rf",
+      "feature": "colors_i",
+      "candidate": 1,
+      "budget": null
+    },
+    "rf_colors_i_err": {
+      "directory": "trials\\final_rf_colors_i_err",
+      "complete_sha256": "701ae97544435f4f76ef8a551b2a93af446e0284ecf97d9c6d09c5ca7bba5e0a",
+      "family": "rf",
+      "feature": "colors_i_err",
+      "candidate": 1,
+      "budget": null
+    },
+    "xgb_mag": {
+      "directory": "trials\\final_xgb_mag",
+      "complete_sha256": "0cc4bf6611e3a25453a5d8cf0869de346374d7040557d56054ae40448bbd7f26",
+      "family": "xgb",
+      "feature": "mag",
+      "candidate": 2,
+      "budget": 793
+    },
+    "xgb_colors": {
+      "directory": "trials\\final_xgb_colors",
+      "complete_sha256": "8ce96516e6af22438ca9efa7c7e89b562e96d25220230b0e91b123316712d8b9",
+      "family": "xgb",
+      "feature": "colors",
+      "candidate": 2,
+      "budget": 238
+    },
+    "xgb_colors_i": {
+      "directory": "trials\\final_xgb_colors_i",
+      "complete_sha256": "2da0b97fed97ec6eb13eab31b51fa6eecb0ce50a38e6cf92648e3cc521f5c5c4",
+      "family": "xgb",
+      "feature": "colors_i",
+      "candidate": 2,
+      "budget": 314
+    },
+    "xgb_colors_i_err": {
+      "directory": "trials\\final_xgb_colors_i_err",
+      "complete_sha256": "2b4bcf152af8833739d224445409b5ce47a4d7437b920b9236cc582c5bd381f8",
+      "family": "xgb",
+      "feature": "colors_i_err",
+      "candidate": 2,
+      "budget": 310
+    },
+    "mlp_mag": {
+      "directory": "trials\\final_mlp_mag",
+      "complete_sha256": "cb2e644be2e5c58a8fdbd4ddf0e029d72591673374488b928afcc72bbf378f89",
+      "family": "mlp",
+      "feature": "mag",
+      "candidate": 2,
+      "budget": 94
+    },
+    "mlp_colors": {
+      "directory": "trials\\final_mlp_colors",
+      "complete_sha256": "f66828eb7b0e569f8de8d2f10c7c6107ddb451a0f15899a08f5007b62b45d0bf",
+      "family": "mlp",
+      "feature": "colors",
+      "candidate": 2,
+      "budget": 35
+    },
+    "mlp_colors_i": {
+      "directory": "trials\\final_mlp_colors_i",
+      "complete_sha256": "90cf36019b00dfd9b4db32071d68f03c9f90eebf9de7b800ffb5c4aff6b2af37",
+      "family": "mlp",
+      "feature": "colors_i",
+      "candidate": 2,
+      "budget": 61
+    },
+    "mlp_colors_i_err": {
+      "directory": "trials\\final_mlp_colors_i_err",
+      "complete_sha256": "bd1e33bac56636878d9c5133acd19e68cef01f69780fb9d07282116c25169b25",
+      "family": "mlp",
+      "feature": "colors_i_err",
+      "candidate": 2,
+      "budget": 91
+    }
+  },
+  "models_id": "211011463291ca53134a58c9578fe5b42239d155f53d879b89eb72a05ac23f63"
+}

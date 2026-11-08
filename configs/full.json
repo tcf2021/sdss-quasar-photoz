@@ -1,0 +1,131 @@
+{
+  "schema_version": 2,
+  "seed": 42,
+  "folds": 3,
+  "early_stop_fraction": 0.15,
+  "cv_max_samples": 50000,
+  "features": [
+    "mag",
+    "colors",
+    "colors_i",
+    "colors_i_err"
+  ],
+  "models": {
+    "knn": [
+      {
+        "n_neighbors": 1,
+        "weights": "uniform",
+        "algorithm": "auto",
+        "leaf_size": 40
+      },
+      {
+        "n_neighbors": 5,
+        "weights": "uniform",
+        "algorithm": "auto",
+        "leaf_size": 40
+      },
+      {
+        "n_neighbors": 5,
+        "weights": "distance",
+        "algorithm": "auto",
+        "leaf_size": 40
+      },
+      {
+        "n_neighbors": 15,
+        "weights": "uniform",
+        "algorithm": "auto",
+        "leaf_size": 40
+      },
+      {
+        "n_neighbors": 15,
+        "weights": "distance",
+        "algorithm": "auto",
+        "leaf_size": 40
+      },
+      {
+        "n_neighbors": 31,
+        "weights": "uniform",
+        "algorithm": "auto",
+        "leaf_size": 40
+      },
+      {
+        "n_neighbors": 31,
+        "weights": "distance",
+        "algorithm": "auto",
+        "leaf_size": 40
+      }
+    ],
+    "rf": [
+      {
+        "n_estimators": 200,
+        "max_depth": 20,
+        "min_samples_leaf": 5,
+        "max_features": 1.0,
+        "bootstrap": true
+      },
+      {
+        "n_estimators": 200,
+        "max_depth": 20,
+        "min_samples_leaf": 20,
+        "max_features": 1.0,
+        "bootstrap": true
+      }
+    ],
+    "xgb": [
+      {
+        "max_rounds": 1000,
+        "patience": 40,
+        "max_depth": 6,
+        "learning_rate": 0.04,
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "min_child_weight": 10,
+        "reg_lambda": 5.0
+      },
+      {
+        "max_rounds": 1000,
+        "patience": 40,
+        "max_depth": 8,
+        "learning_rate": 0.04,
+        "subsample": 0.9,
+        "colsample_bytree": 1.0,
+        "min_child_weight": 20,
+        "reg_lambda": 5.0
+      }
+    ],
+    "mlp": [
+      {
+        "hidden": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "batch_size": 1024,
+        "max_epochs": 100,
+        "patience": 12
+      },
+      {
+        "hidden": [
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "lr": 0.0005,
+        "weight_decay": 0.0001,
+        "batch_size": 1024,
+        "max_epochs": 100,
+        "patience": 12
+      }
+    ]
+  },
+  "allow_final_test": true,
+  "shift": {
+    "feature": "colors_i_err",
+    "i_threshold": 20.0,
+    "max_train_samples": 50000
+  },
+  "audit_cases": 20
+}
